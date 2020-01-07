@@ -32,6 +32,7 @@
         </td>
         <td> <div calss="d-md-inline ">
               <form method="POST"  action="/posts/{{$value['id']}}">
+              {{method_field('DELETE')}}
               @CSRF
               <button value="delete" onclick='return confirm("Are you sure you want to delete?")' class="btn btn-danger" >delete</button>
 

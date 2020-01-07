@@ -63,8 +63,8 @@ class PostController extends Controller
     {
        //بمسك ال اﻻى دى فى متغير اسمه request
         $request=post::find($id);
-        $request->delete();
-        return redirect()->route('posts.index');
+       $request->delete();
+       return redirect()->route('posts.index');
         
         
     }
